@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bontoc Tourist Spot </title>
+	</head>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+body {
+	color: white;
+	overflow-x: hidden;
+}
+
+.video {
+    position: relative;
+    height: auto;
+}
+
+.background-video {
+
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    z-index: -1;	
+	object-fit: cover;
+	
+}
+
+.logo {
+
+    font-family: cursive;
+    font-weight: 40px;
+    font-size: 40px;
+    color:  #2ecc71;
+	cursor: pointer;
+	position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+}
+
+
+.logo img{
+   height: 90px; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+/* this part is for nav bar spacing */
+  li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 90px;
+  
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  transition: 0.4 ease-in-out; 
+}
+
+li.dropdown {
+  display: inline-block;
+}
+/* this is for the content in the dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 49.1%;
+
+}
+/* for the content inside in the dropdown*/
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  margin: 0;
+ 
+}
+
+.dropdown-content a:hover {
+
+  background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+
+ background-color: white;
+ color: black;
+ margin-top: 20px;
+ padding: 20px;
+ font-family: Arial;
+ width: 100%;
+ position: absolute;
+ text-align: center;
+ bottom: -30px;
+ font-size: 20px;
+ 
+}
+
+
+footer a:hoveer {
+ color: #555555;
+}
+
+
+
+  
+	</style>
+	<body>
+	
+	<main>
+<header>
+    <section class="video">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="background.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+	
+  
+		<div class="logo">BONTOC TOURIST SPOTS
+		<img src="camera.png">
+		</div>
+		
+		
+		<ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="news.html">NEWS</a></li>
+	  <li><a href="tourism.html">TOURISM</a></li>
+	  
+    <li class="dropdown">
+     <a href="#" class="dropbtn">ABOUT</a>
+     <div class="dropdown-content">
+       <a href="history.html">HISTORY</a>
+      <a href="mission&vision.html">MISSION & VISION</a>
+    </div>
+  </li>
+</ul>	
+</section>
+		</header>
+	</main>
+		
+		<footer>
+		<p>&copy; 2025 Municipality of Bontoc, Southern Leyte. All right reserved.</p>
+		</footer>
+	
+</body>
+</html>
